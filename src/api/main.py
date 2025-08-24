@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from src.db.supabase_client import supabase
-
+# chumma
 app = FastAPI(title="FinAgent API", version="0.1")
 
 @app.get("/")
