@@ -3,9 +3,9 @@ import os
 from typing import Optional, Dict, Any
 from supabase import create_client, Client
 
-_SUPABASE_URL = os.getenv("SUPABASE_URL")
+_SUPABASE_URL = os.getenv("https://dhuxcgimkcfhanvymyrm.supabase.co")
 # Prefer service role key for server-side operations; fall back to anon for local smoke tests.
-_SUPABASE_KEY = os.getenv("SUPABASE_SERVICE_ROLE_KEY") or os.getenv("SUPABASE_ANON_KEY")
+_SUPABASE_KEY = os.getenv("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRodXhjZ2lta2NmaGFudnlteXJtIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1NTkyMjkzMywiZXhwIjoyMDcxNDk4OTMzfQ.BYPjl4_TLrbeKUznNRcLTmWJsz7egMFWx8mR0SHiTRw") or os.getenv("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRodXhjZ2lta2NmaGFudnlteXJtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTU5MjI5MzMsImV4cCI6MjA3MTQ5ODkzM30.Po4MXjmq4UAC5YHaV_t9Os-e7N-FDT86qHbOxZ6ofHE")
 
 _client: Optional[Client] = None
 
