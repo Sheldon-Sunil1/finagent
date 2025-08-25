@@ -2,6 +2,8 @@
 import os
 from typing import Optional, Dict, Any
 from supabase import create_client, Client
+from dotenv import load_dotenv
+load_dotenv()
 
 _SUPABASE_URL = os.getenv("https://dhuxcgimkcfhanvymyrm.supabase.co")
 # Prefer service role key for server-side operations; fall back to anon for local smoke tests.
