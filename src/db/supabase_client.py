@@ -57,3 +57,4 @@ def get_latest_state(user_id: str) -> Optional[Dict[str, Any]]:
     if res.data:
         return res.data[0]
     return None
+supabase: Client = get_client()
